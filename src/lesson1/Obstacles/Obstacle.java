@@ -1,6 +1,5 @@
-package lesson1.obstacles;
+package lesson1.Obstacles;
 
-import lesson1.Competitors.Animal;
 import lesson1.Competitors.Competitor;
 
 public abstract class Obstacle {

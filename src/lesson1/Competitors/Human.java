@@ -1,11 +1,37 @@
 package lesson1.Competitors;
 
 public class Human implements Competitor{
+    static final String TYPE = "Человек";
     String name;
     int maxRunDistance;
     int maxJumpHeight;
     int maxSwimDistance;
     boolean onDistance;
+
+    @Override
+    public String getType() {
+        return TYPE;
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public int getMaxRunDistance() {
+        return maxRunDistance;
+    }
+
+    @Override
+    public int getMaxJumpHeight() {
+        return maxJumpHeight;
+    }
+
+    @Override
+    public int getMaxSwimDistance() {
+        return maxSwimDistance;
+    }
 
     public boolean isOnDistance() {
         return onDistance;
@@ -47,7 +73,7 @@ public class Human implements Competitor{
     }
 
     public void showResult(){
-        System.out.println(name + ": " + onDistance);
+        System.out.println(TYPE + " " + name + ": " + onDistance);
     }
 
 }

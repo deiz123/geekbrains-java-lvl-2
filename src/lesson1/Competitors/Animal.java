@@ -8,6 +8,31 @@ public abstract class Animal implements Competitor{
     int maxSwimDistance;
     boolean onDistance;
 
+    @Override
+    public String getType() {
+        return type;
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public int getMaxRunDistance() {
+        return maxRunDistance;
+    }
+
+    @Override
+    public int getMaxJumpHeight() {
+        return maxJumpHeight;
+    }
+
+    @Override
+    public int getMaxSwimDistance() {
+        return maxSwimDistance;
+    }
+
     public boolean isOnDistance() {
         return onDistance;
     }
